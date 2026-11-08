@@ -1,0 +1,18 @@
+@page
+@model CSharpDBTP201.Pages.CityManager.CreateCityModel
+
+<h1>Create City</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="CityName">City Name:</label>
+        <input asp-for="CityName" />
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+@if (!string.IsNullOrWhiteSpace(Model.CityName))
+{
+    <p>City created: @Model.CityName</p>
+}
