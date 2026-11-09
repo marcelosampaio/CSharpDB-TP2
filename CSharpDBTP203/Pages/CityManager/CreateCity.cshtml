@@ -1,5 +1,5 @@
 @page
-@model CSharpDBTP203.Pages.CityManager.CreateCityModel
+@model CSharpDBTP204.Pages.CityManager.CreateCityModel
 
 <h1>Create City</h1>
 
@@ -16,4 +16,8 @@
 @if (ModelState.IsValid && !string.IsNullOrWhiteSpace(Model.Input.CityName))
 {
     <p>City created: @Model.Input.CityName</p>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 }

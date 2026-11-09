@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace CSharpDBTP203.Pages.CityManager;
+namespace CSharpDBTP204.Pages.CityManager;
 
 public class CreateCityModel : PageModel
 {

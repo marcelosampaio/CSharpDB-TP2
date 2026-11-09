@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDBTP202", "CSharpDBTP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDBTP203", "CSharpDBTP203\CSharpDBTP203.csproj", "{266EB699-D065-4B8B-8FCC-9576F405E7F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDBTP204", "CSharpDBTP204\CSharpDBTP204.csproj", "{6218E812-8E91-4B42-8924-9FA6D4F75FAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{266EB699-D065-4B8B-8FCC-9576F405E7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{266EB699-D065-4B8B-8FCC-9576F405E7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{266EB699-D065-4B8B-8FCC-9576F405E7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6218E812-8E91-4B42-8924-9FA6D4F75FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6218E812-8E91-4B42-8924-9FA6D4F75FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6218E812-8E91-4B42-8924-9FA6D4F75FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6218E812-8E91-4B42-8924-9FA6D4F75FAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
