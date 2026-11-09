@@ -1,0 +1,24 @@
+@page
+@model CSharpDBTP205.Pages.CountryManager.CreateCountryModel
+
+<h1>Create Country</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="Input.CountryName">Country Name:</label>
+        <input asp-for="Input.CountryName" />
+    </div>
+
+    <div>
+        <label asp-for="Input.CountryCode">Country Code:</label>
+        <input asp-for="Input.CountryCode" />
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+@if (Model.Country != null)
+{
+    <p>Country created: @Model.Country.CountryName</p>
+    <p>Country code: @Model.Country.CountryCode</p>
+}
