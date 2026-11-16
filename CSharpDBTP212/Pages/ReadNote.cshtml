@@ -1,0 +1,31 @@
+@page
+@model CSharpDBTP212.Pages.ReadNoteModel
+
+<h1>Read Notes</h1>
+
+@if (Model.FileNames.Count == 0)
+{
+    <p>No notes found.</p>
+}
+else
+{
+    <h2>Available notes</h2>
+
+    <ul>
+        @foreach (var fileName in Model.FileNames)
+        {
+            <li>
+                <a asp-page-handler="View" asp-route-fileName="@fileName">
+                    @fileName
+                </a>
+            </li>
+        }
+    </ul>
+}
+
+@if (Model.FileContent != null)
+{
+    <h2>@Model.SelectedFileName</h2>
+
+    <pre>@Model.FileContent</pre>
+}

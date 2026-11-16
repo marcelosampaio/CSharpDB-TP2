@@ -1,0 +1,21 @@
+@page
+@model CSharpDBTP212.Pages.SaveNoteModel
+
+<h1>Save Note</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="Input.Content">Note:</label>
+        <textarea asp-for="Input.Content" rows="8"></textarea>
+    </div>
+
+    <button type="submit">Save Note</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.FileName))
+{
+    <p>Note saved successfully!</p>
+    <a asp-page-handler="Download" asp-route-fileName="@Model.FileName">
+        Download note
+    </a>
+}
