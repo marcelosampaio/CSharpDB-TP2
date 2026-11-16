@@ -1,0 +1,38 @@
+@page
+@model CSharpDBTP207.Pages.CountryManager.CreateCountryModel
+
+<h1>Create Countries</h1>
+
+<form method="post">
+    @for (int i = 0; i < 5; i++)
+    {
+        <h3>Country @(i + 1)</h3>
+
+        <div>
+            <label asp-for="Countries[i].CountryName">Country Name:</label>
+            <input asp-for="Countries[i].CountryName" />
+        </div>
+
+        <div>
+            <label asp-for="Countries[i].CountryCode">Country Code:</label>
+            <input asp-for="Countries[i].CountryCode" />
+            <span asp-validation-for="Countries[i].CountryCode"></span>
+        </div>
+    }
+
+    <button type="submit">Submit</button>
+</form>
+
+@if (Model.CreatedCountries.Count > 0)
+{
+    <h2>Countries created</h2>
+
+    @foreach (var country in Model.CreatedCountries)
+    {
+        <p>@country.CountryName - @country.CountryCode</p>
+    }
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
